@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmake --version)",
+      "Bash(g++ --version)",
+      "Bash(pkg-config --modversion openssl)",
+      "Bash(openssl version:*)",
+      "Bash(pkg-config --modversion sdl2)",
+      "Bash(rpm -q SDL2-devel)",
+      "Bash(dnf list:*)",
+      "Bash(cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release)",
+      "Bash(cmake -S /home/lex/Documents/trading_app -B /home/lex/Documents/trading_app/build -G Ninja -DCMAKE_BUILD_TYPE=Release)",
+      "Bash(sudo dnf:*)",
+      "Bash(cmake -S /home/lex/Documents/trading_app -B /home/lex/Documents/trading_app/build -DCMAKE_BUILD_TYPE=Release)",
+      "Bash(rpm -q libX11-devel wayland-devel libxkbcommon-devel mesa-libGL-devel)",
+      "Bash(ls /home/lex/Documents/trading_app/backend/*.cpp /home/lex/Documents/trading_app/backend/*.txt)",
+      "Bash(ls /home/lex/Documents/trading_app/*.txt)",
+      "Bash(cmake -B build -DCMAKE_BUILD_TYPE=Debug)",
+      "Bash(cmake -B build -DCMAKE_BUILD_TYPE=Debug -DSDL_X11=OFF -DSDL_WAYLAND=OFF)",
+      "Bash(grep -A5 svr.Get.*.* /home/lex/Documents/trading_app/build_backend/_deps/httplib-src/httplib.h)",
+      "Bash(pip3 install:*)",
+      "Bash(chmod +x /home/lex/Documents/trading_app/setup.sh)",
+      "Bash(find /home/lex/Documents/trading_app/build/_deps/nlohmann_json-subbuild -name *.txt -o -name CMakeError.log)",
+      "Bash(cmake --build .)",
+      "Bash(cmake ..)",
+      "Bash(ls /home/lex/Documents/trading_app/build/*.sh)",
+      "Bash(echo \"CMAKE_GENERATOR=$CMAKE_GENERATOR\")",
+      "Bash(cmake .. -DCMAKE_BUILD_TYPE=Release)",
+      "Bash(cmake .. -G \"Unix Makefiles\" -DCMAKE_BUILD_TYPE=Release)",
+      "Bash(cmake -G \"Unix Makefiles\" -DCMAKE_BUILD_TYPE=Release .)"
+    ]
+  }
+}

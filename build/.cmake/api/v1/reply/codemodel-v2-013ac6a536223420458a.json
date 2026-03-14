@@ -1,0 +1,573 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						12,
+						14,
+						15,
+						16
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						11,
+						12
+					]
+				},
+				{
+					"build" : "_deps/nlohmann_json-build",
+					"jsonFile" : "directory-_deps.nlohmann_json-build-Debug-928ed0b98e40f126c75a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/_deps/nlohmann_json-src"
+				},
+				{
+					"build" : "_deps/httplib-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.httplib-build-Debug-f57236299ec5321d2f98.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.14.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "build/_deps/httplib-src"
+				},
+				{
+					"build" : "_deps/eigen-build",
+					"childIndexes" : 
+					[
+						4,
+						5,
+						6,
+						9,
+						10,
+						11
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.eigen-build-Debug-f790c77c62571d3be88d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "build/_deps/eigen-src",
+					"targetIndexes" : 
+					[
+						18
+					]
+				},
+				{
+					"build" : "_deps/eigen-build/blas",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.eigen-build.blas-Debug-5f3548b20a446d061858.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 4,
+					"source" : "build/_deps/eigen-src/blas",
+					"targetIndexes" : 
+					[
+						3,
+						5,
+						6
+					]
+				},
+				{
+					"build" : "_deps/eigen-build/lapack",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.eigen-build.lapack-Debug-a49f509bc402b5c5a9fe.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 5,
+					"source" : "build/_deps/eigen-src/lapack",
+					"targetIndexes" : 
+					[
+						7,
+						8,
+						13
+					]
+				},
+				{
+					"build" : "_deps/eigen-build/unsupported",
+					"childIndexes" : 
+					[
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.eigen-build.unsupported-Debug-8c858feebe792bd13156.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "build/_deps/eigen-src/unsupported"
+				},
+				{
+					"build" : "_deps/eigen-build/unsupported/Eigen",
+					"childIndexes" : 
+					[
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.eigen-build.unsupported.Eigen-Debug-e369a49d17e53b217df1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 6,
+					"projectIndex" : 3,
+					"source" : "build/_deps/eigen-src/unsupported/Eigen"
+				},
+				{
+					"build" : "_deps/eigen-build/unsupported/Eigen/CXX11",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.eigen-build.unsupported.Eigen.CXX11-Debug-412657491beb18a65d7c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 3,
+					"source" : "build/_deps/eigen-src/unsupported/Eigen/CXX11"
+				},
+				{
+					"build" : "_deps/eigen-build/demos",
+					"jsonFile" : "directory-_deps.eigen-build.demos-Debug-b85412bd5b24f77bb3e7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 6,
+					"source" : "build/_deps/eigen-src/demos",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "_deps/eigen-build/scripts",
+					"jsonFile" : "directory-_deps.eigen-build.scripts-Debug-c83c50737bb9fddd1345.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "build/_deps/eigen-src/scripts"
+				},
+				{
+					"build" : "_deps/eigen-build/bench/spbench",
+					"jsonFile" : "directory-_deps.eigen-build.bench.spbench-Debug-56d59976aa14730fbed3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5.0"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 3,
+					"source" : "build/_deps/eigen-src/bench/spbench",
+					"targetIndexes" : 
+					[
+						14,
+						15,
+						17
+					]
+				},
+				{
+					"build" : "_deps/sqlitecpp-build",
+					"childIndexes" : 
+					[
+						13
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.sqlitecpp-build-Debug-9267c3f6bc2ab30b0c87.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 7,
+					"source" : "build/_deps/sqlitecpp-src",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "_deps/sqlitecpp-build/sqlite3",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.sqlitecpp-build.sqlite3-Debug-a5d38388ce5437626412.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 12,
+					"projectIndex" : 7,
+					"source" : "build/_deps/sqlitecpp-src/sqlite3",
+					"targetIndexes" : 
+					[
+						16
+					]
+				},
+				{
+					"build" : "_deps/sdl3-build",
+					"jsonFile" : "directory-_deps.sdl3-build-Debug-5191e492a282da1db17f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 8,
+					"source" : "build/_deps/sdl3-src",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"build" : "backend",
+					"jsonFile" : "directory-backend-Debug-8702910ebe8ec25d8860.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "backend",
+					"targetIndexes" : 
+					[
+						10
+					]
+				},
+				{
+					"build" : "frontend",
+					"jsonFile" : "directory-frontend-Debug-b40a0bdb4e36631bd821.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "frontend",
+					"targetIndexes" : 
+					[
+						9
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						7,
+						8
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						15,
+						16
+					],
+					"name" : "HedgeFundApp",
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11,
+						12
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 0
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "httplib",
+					"parentIndex" : 0
+				},
+				{
+					"childIndexes" : 
+					[
+						4,
+						5,
+						6
+					],
+					"directoryIndexes" : 
+					[
+						3,
+						6,
+						7,
+						8,
+						10,
+						11
+					],
+					"name" : "Eigen3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4
+					],
+					"name" : "EigenBlas",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						3,
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						5
+					],
+					"name" : "EigenLapack",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						7,
+						8,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						9
+					],
+					"name" : "EigenDemos",
+					"parentIndex" : 3,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						12,
+						13
+					],
+					"name" : "SQLiteCpp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						16
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						14
+					],
+					"name" : "SDL3",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 14,
+					"id" : "SDL3-static::@405c074760d2f6728126",
+					"jsonFile" : "target-SDL3-static-Debug-f659f62db09b1079de90.json",
+					"name" : "SDL3-static",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 14,
+					"id" : "SDL_uclibc::@405c074760d2f6728126",
+					"jsonFile" : "target-SDL_uclibc-Debug-2bdc313fc37d4980b416.json",
+					"name" : "SDL_uclibc",
+					"projectIndex" : 8
+				},
+				{
+					"directoryIndex" : 12,
+					"id" : "SQLiteCpp::@e8e2783ea6e1dcce852e",
+					"jsonFile" : "target-SQLiteCpp-Debug-551da15f76574f8412cb.json",
+					"name" : "SQLiteCpp",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "blas::@9ef3fab580bd1eb9db4d",
+					"jsonFile" : "target-blas-Debug-7ee1b21c11d46cfe1dc5.json",
+					"name" : "blas",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "demos::@dcc6c9c67a0bf50a846e",
+					"jsonFile" : "target-demos-Debug-7fbdfb2a68fd18c2c7e5.json",
+					"name" : "demos",
+					"projectIndex" : 6
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "eigen_blas::@9ef3fab580bd1eb9db4d",
+					"jsonFile" : "target-eigen_blas-Debug-e609c275af92b7e3c4f7.json",
+					"name" : "eigen_blas",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "eigen_blas_static::@9ef3fab580bd1eb9db4d",
+					"jsonFile" : "target-eigen_blas_static-Debug-b45cb9aa14af9a93f217.json",
+					"name" : "eigen_blas_static",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "eigen_lapack::@0f6604f6c00bc02da617",
+					"jsonFile" : "target-eigen_lapack-Debug-b1a4db9ff8af7d58acef.json",
+					"name" : "eigen_lapack",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "eigen_lapack_static::@0f6604f6c00bc02da617",
+					"jsonFile" : "target-eigen_lapack_static-Debug-81b5570a1d18ccbde465.json",
+					"name" : "eigen_lapack_static",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 16,
+					"id" : "hf_client::@73e8a6b9a3e1c0d3809b",
+					"jsonFile" : "target-hf_client-Debug-adfffdd53e2e84564475.json",
+					"name" : "hf_client",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 15,
+					"id" : "hf_server::@e17dcb4e28158375c849",
+					"jsonFile" : "target-hf_server-Debug-8471b2a942ffa975eb9c.json",
+					"name" : "hf_server",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "imgui::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-imgui-Debug-61489a6f9f177de6efa7.json",
+					"name" : "imgui",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "implot::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-implot-Debug-7891791120f1965986f3.json",
+					"name" : "implot",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "lapack::@0f6604f6c00bc02da617",
+					"jsonFile" : "target-lapack-Debug-95bba77914e283a2385a.json",
+					"name" : "lapack",
+					"projectIndex" : 5
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "spbenchsolver::@ddb5dffe3989f24a86e8",
+					"jsonFile" : "target-spbenchsolver-Debug-89f315c54751f9521756.json",
+					"name" : "spbenchsolver",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "spsolver::@ddb5dffe3989f24a86e8",
+					"jsonFile" : "target-spsolver-Debug-fefb73a41a70d8a3e5d3.json",
+					"name" : "spsolver",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 13,
+					"id" : "sqlite3::@cab04f679818ace70281",
+					"jsonFile" : "target-sqlite3-Debug-6d2752871188715d0f6c.json",
+					"name" : "sqlite3",
+					"projectIndex" : 7
+				},
+				{
+					"directoryIndex" : 11,
+					"id" : "test_sparseLU::@ddb5dffe3989f24a86e8",
+					"jsonFile" : "target-test_sparseLU-Debug-a8a221ac2b0bdf09ae59.json",
+					"name" : "test_sparseLU",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "uninstall::@71fc261a36766da068b5",
+					"jsonFile" : "target-uninstall-Debug-65f096f5290f05dbead3.json",
+					"name" : "uninstall",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lex/Documents/trading_app/build",
+		"source" : "/home/lex/Documents/trading_app"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

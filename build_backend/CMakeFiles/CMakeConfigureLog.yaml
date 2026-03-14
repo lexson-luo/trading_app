@@ -1,0 +1,1742 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.19.6-200.fc43.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/lex/Documents/trading_app/build_backend/CMakeFiles/3.31.10/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/lex/Documents/trading_app/build_backend/CMakeFiles/3.31.10/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fDEkMW"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fDEkMW"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fDEkMW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7b374/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7b374.dir/build.make CMakeFiles/cmTC_7b374.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fDEkMW'
+        Building CXX object CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,cobol,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.2.1-build/gcc-15.2.1-20260123/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none,amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20260123 (Red Hat 15.2.1-7) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b374.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/15/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7b374.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccrryeEc.s
+        GNU C++17 (GCC) version 15.2.1 20260123 (Red Hat 15.2.1-7) (x86_64-redhat-linux)
+        	compiled by GNU C version 15.2.1 20260123 (Red Hat 15.2.1-7), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/15/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/15/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15
+         /usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15/x86_64-redhat-linux
+         /usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15/backward
+         /usr/lib/gcc/x86_64-redhat-linux/15/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 61fbb778c0a8c441a1c0ce3e680cc1db
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b374.dir/'
+         as -v --64 -o CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrryeEc.s
+        GNU assembler version 2.45.1 (x86_64-redhat-linux) using BFD version version 2.45.1-4.fc43
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_7b374
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b374.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,cobol,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.2.1-build/gcc-15.2.1-20260123/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none,amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20260123 (Red Hat 15.2.1-7) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b374' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7b374.'
+         /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyGY4qx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7b374 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+        collect2 version 15.2.1 20260123 (Red Hat 15.2.1-7)
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyGY4qx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7b374 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+        GNU ld version 2.45.1-4.fc43
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b374' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7b374.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_7b374
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fDEkMW'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15/x86_64-redhat-linux]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15/backward]
+          add: [/usr/lib/gcc/x86_64-redhat-linux/15/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15] ==> [/usr/include/c++/15]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15/x86_64-redhat-linux] ==> [/usr/include/c++/15/x86_64-redhat-linux]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15/backward] ==> [/usr/include/c++/15/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/15/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/15/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15;/usr/include/c++/15/x86_64-redhat-linux;/usr/include/c++/15/backward;/usr/lib/gcc/x86_64-redhat-linux/15/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fDEkMW']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7b374/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_7b374.dir/build.make CMakeFiles/cmTC_7b374.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fDEkMW']
+        ignore line: [Building CXX object CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 cobol lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.2.1-build/gcc-15.2.1-20260123/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20260123 (Red Hat 15.2.1-7) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b374.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_7b374.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccrryeEc.s]
+        ignore line: [GNU C++17 (GCC) version 15.2.1 20260123 (Red Hat 15.2.1-7) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 15.2.1 20260123 (Red Hat 15.2.1-7)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/15/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/15/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15/x86_64-redhat-linux]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/15/../../../../include/c++/15/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/15/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 61fbb778c0a8c441a1c0ce3e680cc1db]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b374.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccrryeEc.s]
+        ignore line: [GNU assembler version 2.45.1 (x86_64-redhat-linux) using BFD version version 2.45.1-4.fc43]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_7b374]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b374.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 cobol lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.2.1-build/gcc-15.2.1-20260123/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20260123 (Red Hat 15.2.1-7) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7b374' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_7b374.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyGY4qx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7b374 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/15/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccyGY4qx.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_7b374] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/15] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/15]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/15/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+        ignore line: [collect2 version 15.2.1 20260123 (Red Hat 15.2.1-7)]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccyGY4qx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_7b374 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_7b374.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/15] ==> [/usr/lib/gcc/x86_64-redhat-linux/15]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/15;/usr/lib64;/lib64;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld version 2.45.1-4.fc43
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-d559Dc"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-d559Dc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-d559Dc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c3787/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c3787.dir/build.make CMakeFiles/cmTC_c3787.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-d559Dc'
+        Building C object CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,cobol,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.2.1-build/gcc-15.2.1-20260123/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none,amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20260123 (Red Hat 15.2.1-7) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3787.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/15/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c3787.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccjb3033.s
+        GNU C23 (GCC) version 15.2.1 20260123 (Red Hat 15.2.1-7) (x86_64-redhat-linux)
+        	compiled by GNU C version 15.2.1 20260123 (Red Hat 15.2.1-7), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/15/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/15/../../../../x86_64-redhat-linux/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-redhat-linux/15/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 26be2a77f083688cd617fb87abbd954c
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3787.dir/'
+         as -v --64 -o CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o /tmp/ccjb3033.s
+        GNU assembler version 2.45.1 (x86_64-redhat-linux) using BFD version version 2.45.1-4.fc43
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_c3787
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3787.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-redhat-linux
+        Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,objc,obj-c++,ada,go,d,m2,cobol,lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.2.1-build/gcc-15.2.1-20260123/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none,amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20260123 (Red Hat 15.2.1-7) (GCC) 
+        COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3787' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c3787.'
+         /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXk6kQK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c3787 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+        collect2 version 15.2.1 20260123 (Red Hat 15.2.1-7)
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXk6kQK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c3787 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o
+        GNU ld version 2.45.1-4.fc43
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3787' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c3787.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o -o cmTC_c3787
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-d559Dc'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-redhat-linux/15/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-redhat-linux/15/include] ==> [/usr/lib/gcc/x86_64-redhat-linux/15/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-redhat-linux/15/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-d559Dc']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c3787/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_c3787.dir/build.make CMakeFiles/cmTC_c3787.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-d559Dc']
+        ignore line: [Building C object CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 cobol lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.2.1-build/gcc-15.2.1-20260123/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20260123 (Red Hat 15.2.1-7) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3787.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c3787.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccjb3033.s]
+        ignore line: [GNU C23 (GCC) version 15.2.1 20260123 (Red Hat 15.2.1-7) (x86_64-redhat-linux)]
+        ignore line: [	compiled by GNU C version 15.2.1 20260123 (Red Hat 15.2.1-7)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/15/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-redhat-linux/15/../../../../x86_64-redhat-linux/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-redhat-linux/15/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 26be2a77f083688cd617fb87abbd954c]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3787.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o /tmp/ccjb3033.s]
+        ignore line: [GNU assembler version 2.45.1 (x86_64-redhat-linux) using BFD version version 2.45.1-4.fc43]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_c3787]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3787.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-redhat-linux]
+        ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran objc obj-c++ ada go d m2 cobol lto --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugzilla.redhat.com/ --enable-shared --enable-threads=posix --enable-checking=release --enable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --enable-libstdcxx-backtrace --with-libstdcxx-zoneinfo=/usr/share/zoneinfo --with-linker-hash-style=gnu --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-15.2.1-build/gcc-15.2.1-20260123/obj-x86_64-redhat-linux/isl-install --enable-offload-targets=nvptx-none amdgcn-amdhsa --enable-offload-defaulted --without-cuda-driver --enable-gnu-indirect-function --enable-cet --with-tune=generic --with-arch_32=i686 --build=x86_64-redhat-linux --with-build-config=bootstrap-lto --enable-link-serialization=1 --disable-libssp]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20260123 (Red Hat 15.2.1-7) (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/15/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/15/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/15/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3787' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c3787.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/15/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXk6kQK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c3787 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/15/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccXk6kQK.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c3787] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/15] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/15]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib/gcc/x86_64-redhat-linux/15/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o]
+          arg [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+        ignore line: [collect2 version 15.2.1 20260123 (Red Hat 15.2.1-7)]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccXk6kQK.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_c3787 /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/15 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c3787.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-redhat-linux/15/crtend.o /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/15] ==> [/usr/lib/gcc/x86_64-redhat-linux/15]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/15/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o;/usr/lib/gcc/x86_64-redhat-linux/15/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/15;/usr/lib64;/lib64;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld version 2.45.1-4.fc43
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/httplib-src/CMakeLists.txt:118 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Lh1qrD"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Lh1qrD"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Lh1qrD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8554/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d8554.dir/build.make CMakeFiles/cmTC_d8554.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Lh1qrD'
+        Building C object CMakeFiles/cmTC_d8554.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d8554.dir/src.c.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Lh1qrD/src.c
+        Linking C executable cmTC_d8554
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8554.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_d8554.dir/src.c.o -o cmTC_d8554
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Lh1qrD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:77 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test EIGEN_COMPILER_SUPPORT_CPP11"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-V66i9z"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-V66i9z"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "EIGEN_COMPILER_SUPPORT_CPP11"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-V66i9z'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_57864/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_57864.dir/build.make CMakeFiles/cmTC_57864.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-V66i9z'
+        Building CXX object CMakeFiles/cmTC_57864.dir/src.cxx.o
+        /usr/bin/c++ -DEIGEN_COMPILER_SUPPORT_CPP11  -std=c++20   -std=c++11 -o CMakeFiles/cmTC_57864.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-V66i9z/src.cxx
+        Linking CXX executable cmTC_57864
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57864.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_57864.dir/src.cxx.o -o cmTC_57864
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-V66i9z'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Z2sz2x"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Z2sz2x"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Z2sz2x'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_397a0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_397a0.dir/build.make CMakeFiles/cmTC_397a0.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Z2sz2x'
+        Building CXX object CMakeFiles/cmTC_397a0.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_std=cpp03  -std=c++20   -std=c++03 -o CMakeFiles/cmTC_397a0.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Z2sz2x/src.cxx
+        Linking CXX executable cmTC_397a0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_397a0.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_397a0.dir/src.cxx.o -o cmTC_397a0
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Z2sz2x'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake/FindStandardMathLibrary.cmake:35 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:98 (find_package)"
+    checks:
+      - "Performing Test standard_math_library_linked_to_automatically"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-3SsAZP"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-3SsAZP"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "standard_math_library_linked_to_automatically"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-3SsAZP'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b7940/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b7940.dir/build.make CMakeFiles/cmTC_b7940.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-3SsAZP'
+        Building CXX object CMakeFiles/cmTC_b7940.dir/src.cxx.o
+        /usr/bin/c++ -Dstandard_math_library_linked_to_automatically  -std=c++03  -std=c++20 -o CMakeFiles/cmTC_b7940.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-3SsAZP/src.cxx
+        Linking CXX executable cmTC_b7940
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7940.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03  CMakeFiles/cmTC_b7940.dir/src.cxx.o -o cmTC_b7940
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-3SsAZP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:150 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_WERROR"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-C6PcLt"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-C6PcLt"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-C6PcLt'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9407d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9407d.dir/build.make CMakeFiles/cmTC_9407d.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-C6PcLt'
+        Building CXX object CMakeFiles/cmTC_9407d.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_WERROR  -std=c++03  -std=c++20   -Werror -o CMakeFiles/cmTC_9407d.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-C6PcLt/src.cxx
+        Linking CXX executable cmTC_9407d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9407d.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03  CMakeFiles/cmTC_9407d.dir/src.cxx.o -o cmTC_9407d
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-C6PcLt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:154 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_pedantic"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jgw5bV"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jgw5bV"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jgw5bV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bdb42/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bdb42.dir/build.make CMakeFiles/cmTC_bdb42.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jgw5bV'
+        Building CXX object CMakeFiles/cmTC_bdb42.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_pedantic  -std=c++03 -Werror -std=c++20   -pedantic -o CMakeFiles/cmTC_bdb42.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jgw5bV/src.cxx
+        Linking CXX executable cmTC_bdb42
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bdb42.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -Werror CMakeFiles/cmTC_bdb42.dir/src.cxx.o -o cmTC_bdb42
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jgw5bV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:155 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wall"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fdnFSJ"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fdnFSJ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fdnFSJ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ddd03/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ddd03.dir/build.make CMakeFiles/cmTC_ddd03.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fdnFSJ'
+        Building CXX object CMakeFiles/cmTC_ddd03.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wall  -std=c++03 -pedantic -Werror -std=c++20   -Wall -o CMakeFiles/cmTC_ddd03.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fdnFSJ/src.cxx
+        Linking CXX executable cmTC_ddd03
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddd03.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Werror CMakeFiles/cmTC_ddd03.dir/src.cxx.o -o cmTC_ddd03
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-fdnFSJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:156 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wextra"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-AokmEg"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-AokmEg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-AokmEg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5543a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5543a.dir/build.make CMakeFiles/cmTC_5543a.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-AokmEg'
+        Building CXX object CMakeFiles/cmTC_5543a.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wextra  -std=c++03 -pedantic -Wall -Werror -std=c++20   -Wextra -o CMakeFiles/cmTC_5543a.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-AokmEg/src.cxx
+        Linking CXX executable cmTC_5543a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5543a.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Werror CMakeFiles/cmTC_5543a.dir/src.cxx.o -o cmTC_5543a
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-AokmEg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:159 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wundef"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-SCyIbh"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-SCyIbh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wundef"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-SCyIbh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_83f49/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_83f49.dir/build.make CMakeFiles/cmTC_83f49.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-SCyIbh'
+        Building CXX object CMakeFiles/cmTC_83f49.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wundef  -std=c++03 -pedantic -Wall -Wextra -Werror -std=c++20   -Wundef -o CMakeFiles/cmTC_83f49.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-SCyIbh/src.cxx
+        Linking CXX executable cmTC_83f49
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83f49.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Werror CMakeFiles/cmTC_83f49.dir/src.cxx.o -o cmTC_83f49
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-SCyIbh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:160 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wcastalign"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Itf0YQ"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Itf0YQ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wcastalign"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Itf0YQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1c8d6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1c8d6.dir/build.make CMakeFiles/cmTC_1c8d6.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Itf0YQ'
+        Building CXX object CMakeFiles/cmTC_1c8d6.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wcastalign  -std=c++03 -pedantic -Wall -Wextra -Wundef -Werror -std=c++20   -Wcast-align -o CMakeFiles/cmTC_1c8d6.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Itf0YQ/src.cxx
+        Linking CXX executable cmTC_1c8d6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c8d6.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Werror CMakeFiles/cmTC_1c8d6.dir/src.cxx.o -o cmTC_1c8d6
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-Itf0YQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:161 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wcharsubscripts"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-hQXCJz"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-hQXCJz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wcharsubscripts"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-hQXCJz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e6854/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e6854.dir/build.make CMakeFiles/cmTC_e6854.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-hQXCJz'
+        Building CXX object CMakeFiles/cmTC_e6854.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wcharsubscripts  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Werror -std=c++20   -Wchar-subscripts -o CMakeFiles/cmTC_e6854.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-hQXCJz/src.cxx
+        Linking CXX executable cmTC_e6854
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6854.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Werror CMakeFiles/cmTC_e6854.dir/src.cxx.o -o cmTC_e6854
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-hQXCJz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:162 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wnonvirtualdtor"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-5BkYrG"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-5BkYrG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wnonvirtualdtor"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-5BkYrG'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_82c98/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_82c98.dir/build.make CMakeFiles/cmTC_82c98.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-5BkYrG'
+        Building CXX object CMakeFiles/cmTC_82c98.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wnonvirtualdtor  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Werror -std=c++20   -Wnon-virtual-dtor -o CMakeFiles/cmTC_82c98.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-5BkYrG/src.cxx
+        Linking CXX executable cmTC_82c98
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82c98.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Werror CMakeFiles/cmTC_82c98.dir/src.cxx.o -o cmTC_82c98
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-5BkYrG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:163 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wunusedlocaltypedefs"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-ZBAsfR"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-ZBAsfR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wunusedlocaltypedefs"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-ZBAsfR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a49b4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a49b4.dir/build.make CMakeFiles/cmTC_a49b4.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-ZBAsfR'
+        Building CXX object CMakeFiles/cmTC_a49b4.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wunusedlocaltypedefs  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Werror -std=c++20   -Wunused-local-typedefs -o CMakeFiles/cmTC_a49b4.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-ZBAsfR/src.cxx
+        Linking CXX executable cmTC_a49b4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a49b4.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Werror CMakeFiles/cmTC_a49b4.dir/src.cxx.o -o cmTC_a49b4
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-ZBAsfR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:164 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wpointerarith"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KzU18k"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KzU18k"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wpointerarith"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KzU18k'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b0008/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b0008.dir/build.make CMakeFiles/cmTC_b0008.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KzU18k'
+        Building CXX object CMakeFiles/cmTC_b0008.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wpointerarith  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Werror -std=c++20   -Wpointer-arith -o CMakeFiles/cmTC_b0008.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KzU18k/src.cxx
+        Linking CXX executable cmTC_b0008
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b0008.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Werror CMakeFiles/cmTC_b0008.dir/src.cxx.o -o cmTC_b0008
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KzU18k'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:165 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wwritestrings"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-OtxaU4"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-OtxaU4"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wwritestrings"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-OtxaU4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b915b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b915b.dir/build.make CMakeFiles/cmTC_b915b.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-OtxaU4'
+        Building CXX object CMakeFiles/cmTC_b915b.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wwritestrings  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Werror -std=c++20   -Wwrite-strings -o CMakeFiles/cmTC_b915b.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-OtxaU4/src.cxx
+        Linking CXX executable cmTC_b915b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b915b.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Werror CMakeFiles/cmTC_b915b.dir/src.cxx.o -o cmTC_b915b
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-OtxaU4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:166 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wformatsecurity"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-941ZKy"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-941ZKy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wformatsecurity"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-941ZKy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5bf84/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5bf84.dir/build.make CMakeFiles/cmTC_5bf84.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-941ZKy'
+        Building CXX object CMakeFiles/cmTC_5bf84.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wformatsecurity  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Werror -std=c++20   -Wformat-security -o CMakeFiles/cmTC_5bf84.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-941ZKy/src.cxx
+        Linking CXX executable cmTC_5bf84
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bf84.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Werror CMakeFiles/cmTC_5bf84.dir/src.cxx.o -o cmTC_5bf84
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-941ZKy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:167 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wshorten64to32"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-cRzs13"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-cRzs13"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wshorten64to32"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-cRzs13'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0ea66/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0ea66.dir/build.make CMakeFiles/cmTC_0ea66.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-cRzs13'
+        Building CXX object CMakeFiles/cmTC_0ea66.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wshorten64to32  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror -std=c++20   -Wshorten-64-to-32 -o CMakeFiles/cmTC_0ea66.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-cRzs13/src.cxx
+        c++: error: unrecognized command-line option '-Wshorten-64-to-32'
+        gmake[1]: *** [CMakeFiles/cmTC_0ea66.dir/build.make:81: CMakeFiles/cmTC_0ea66.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-cRzs13'
+        gmake: *** [Makefile:134: cmTC_0ea66/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:168 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wlogicalop"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-yzLZ9D"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-yzLZ9D"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wlogicalop"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-yzLZ9D'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d1a0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7d1a0.dir/build.make CMakeFiles/cmTC_7d1a0.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-yzLZ9D'
+        Building CXX object CMakeFiles/cmTC_7d1a0.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wlogicalop  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror -std=c++20   -Wlogical-op -o CMakeFiles/cmTC_7d1a0.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-yzLZ9D/src.cxx
+        Linking CXX executable cmTC_7d1a0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7d1a0.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Werror CMakeFiles/cmTC_7d1a0.dir/src.cxx.o -o cmTC_7d1a0
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-yzLZ9D'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:169 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wenumconversion"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-bbk8UY"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-bbk8UY"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wenumconversion"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-bbk8UY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8c559/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8c559.dir/build.make CMakeFiles/cmTC_8c559.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-bbk8UY'
+        Building CXX object CMakeFiles/cmTC_8c559.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wenumconversion  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror -std=c++20   -Wenum-conversion -o CMakeFiles/cmTC_8c559.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-bbk8UY/src.cxx
+        Linking CXX executable cmTC_8c559
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c559.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Werror CMakeFiles/cmTC_8c559.dir/src.cxx.o -o cmTC_8c559
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-bbk8UY'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:170 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wcpp11extensions"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-St1VL1"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-St1VL1"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wcpp11extensions"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-St1VL1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_86b1a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_86b1a.dir/build.make CMakeFiles/cmTC_86b1a.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-St1VL1'
+        Building CXX object CMakeFiles/cmTC_86b1a.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wcpp11extensions  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Werror -std=c++20   -Wc++11-extensions -o CMakeFiles/cmTC_86b1a.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-St1VL1/src.cxx
+        Linking CXX executable cmTC_86b1a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86b1a.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Werror CMakeFiles/cmTC_86b1a.dir/src.cxx.o -o cmTC_86b1a
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-St1VL1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:171 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wdoublepromotion"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-f60MDA"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-f60MDA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wdoublepromotion"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-f60MDA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_82ea4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_82ea4.dir/build.make CMakeFiles/cmTC_82ea4.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-f60MDA'
+        Building CXX object CMakeFiles/cmTC_82ea4.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wdoublepromotion  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Werror -std=c++20   -Wdouble-promotion -o CMakeFiles/cmTC_82ea4.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-f60MDA/src.cxx
+        Linking CXX executable cmTC_82ea4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82ea4.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Werror CMakeFiles/cmTC_82ea4.dir/src.cxx.o -o cmTC_82ea4
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-f60MDA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:174 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wshadow"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-p23c95"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-p23c95"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-p23c95'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_94158/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_94158.dir/build.make CMakeFiles/cmTC_94158.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-p23c95'
+        Building CXX object CMakeFiles/cmTC_94158.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wshadow  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Werror -std=c++20   -Wshadow -o CMakeFiles/cmTC_94158.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-p23c95/src.cxx
+        Linking CXX executable cmTC_94158
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94158.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Werror CMakeFiles/cmTC_94158.dir/src.cxx.o -o cmTC_94158
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-p23c95'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:176 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wnopsabi"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KC5JtR"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KC5JtR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wnopsabi"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KC5JtR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f5eb8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f5eb8.dir/build.make CMakeFiles/cmTC_f5eb8.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KC5JtR'
+        Building CXX object CMakeFiles/cmTC_f5eb8.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wnopsabi  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Werror -std=c++20   -Wno-psabi -o CMakeFiles/cmTC_f5eb8.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KC5JtR/src.cxx
+        Linking CXX executable cmTC_f5eb8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5eb8.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Werror CMakeFiles/cmTC_f5eb8.dir/src.cxx.o -o cmTC_f5eb8
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KC5JtR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:177 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wnovariadicmacros"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-gBcKeT"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-gBcKeT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wnovariadicmacros"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-gBcKeT'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_57566/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_57566.dir/build.make CMakeFiles/cmTC_57566.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-gBcKeT'
+        Building CXX object CMakeFiles/cmTC_57566.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wnovariadicmacros  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Werror -std=c++20   -Wno-variadic-macros -o CMakeFiles/cmTC_57566.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-gBcKeT/src.cxx
+        Linking CXX executable cmTC_57566
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57566.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Werror CMakeFiles/cmTC_57566.dir/src.cxx.o -o cmTC_57566
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-gBcKeT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:178 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Wnolonglong"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-1Jm14u"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-1Jm14u"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Wnolonglong"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-1Jm14u'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_db393/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_db393.dir/build.make CMakeFiles/cmTC_db393.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-1Jm14u'
+        Building CXX object CMakeFiles/cmTC_db393.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Wnolonglong  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Werror -std=c++20   -Wno-long-long -o CMakeFiles/cmTC_db393.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-1Jm14u/src.cxx
+        Linking CXX executable cmTC_db393
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_db393.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Werror CMakeFiles/cmTC_db393.dir/src.cxx.o -o cmTC_db393
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-1Jm14u'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:180 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_fnochecknew"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-benJpA"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-benJpA"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_fnochecknew"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-benJpA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d9712/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d9712.dir/build.make CMakeFiles/cmTC_d9712.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-benJpA'
+        Building CXX object CMakeFiles/cmTC_d9712.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_fnochecknew  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -Werror -std=c++20   -fno-check-new -o CMakeFiles/cmTC_d9712.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-benJpA/src.cxx
+        Linking CXX executable cmTC_d9712
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9712.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -Werror CMakeFiles/cmTC_d9712.dir/src.cxx.o -o cmTC_d9712
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-benJpA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:181 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_fnocommon"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-zusdeg"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-zusdeg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_fnocommon"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-zusdeg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b6b42/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b6b42.dir/build.make CMakeFiles/cmTC_b6b42.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-zusdeg'
+        Building CXX object CMakeFiles/cmTC_b6b42.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_fnocommon  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -Werror -std=c++20   -fno-common -o CMakeFiles/cmTC_b6b42.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-zusdeg/src.cxx
+        Linking CXX executable cmTC_b6b42
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6b42.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -Werror CMakeFiles/cmTC_b6b42.dir/src.cxx.o -o cmTC_b6b42
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-zusdeg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:182 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_fstrictaliasing"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-W0cz47"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-W0cz47"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_fstrictaliasing"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-W0cz47'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_51cd9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_51cd9.dir/build.make CMakeFiles/cmTC_51cd9.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-W0cz47'
+        Building CXX object CMakeFiles/cmTC_51cd9.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_fstrictaliasing  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -Werror -std=c++20   -fstrict-aliasing -o CMakeFiles/cmTC_51cd9.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-W0cz47/src.cxx
+        Linking CXX executable cmTC_51cd9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51cd9.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -Werror CMakeFiles/cmTC_51cd9.dir/src.cxx.o -o cmTC_51cd9
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-W0cz47'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:183 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_wd981"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-mr3KSy"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-mr3KSy"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_wd981"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-mr3KSy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f9047/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f9047.dir/build.make CMakeFiles/cmTC_f9047.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-mr3KSy'
+        Building CXX object CMakeFiles/cmTC_f9047.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_wd981  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -std=c++20   -wd981 -o CMakeFiles/cmTC_f9047.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-mr3KSy/src.cxx
+        c++: error: unrecognized command-line option '-wd981'
+        gmake[1]: *** [CMakeFiles/cmTC_f9047.dir/build.make:81: CMakeFiles/cmTC_f9047.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-mr3KSy'
+        gmake: *** [Makefile:134: cmTC_f9047/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:184 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_wd2304"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-8RAmwv"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-8RAmwv"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_wd2304"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-8RAmwv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4b839/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4b839.dir/build.make CMakeFiles/cmTC_4b839.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-8RAmwv'
+        Building CXX object CMakeFiles/cmTC_4b839.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_wd2304  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -std=c++20   -wd2304 -o CMakeFiles/cmTC_4b839.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-8RAmwv/src.cxx
+        c++: error: unrecognized command-line option '-wd2304'
+        gmake[1]: *** [CMakeFiles/cmTC_4b839.dir/build.make:81: CMakeFiles/cmTC_4b839.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-8RAmwv'
+        gmake: *** [Makefile:134: cmTC_4b839/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:189 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_STRICTANSI"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jnUwUx"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jnUwUx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_STRICTANSI"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jnUwUx'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_efe62/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_efe62.dir/build.make CMakeFiles/cmTC_efe62.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jnUwUx'
+        Building CXX object CMakeFiles/cmTC_efe62.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_STRICTANSI  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -std=c++20   -strict-ansi -o CMakeFiles/cmTC_efe62.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jnUwUx/src.cxx
+        c++: error: unrecognized command-line option '-strict-ansi'; did you mean '-fstrict-enums'?
+        gmake[1]: *** [CMakeFiles/cmTC_efe62.dir/build.make:81: CMakeFiles/cmTC_efe62.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-jnUwUx'
+        gmake: *** [Makefile:134: cmTC_efe62/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:190 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_Qunusedarguments"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-uxGdtc"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-uxGdtc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_Qunusedarguments"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-uxGdtc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7d649/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7d649.dir/build.make CMakeFiles/cmTC_7d649.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-uxGdtc'
+        Building CXX object CMakeFiles/cmTC_7d649.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_Qunusedarguments  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -std=c++20   -Qunused-arguments -o CMakeFiles/cmTC_7d649.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-uxGdtc/src.cxx
+        c++: error: unrecognized command-line option '-Qunused-arguments'
+        gmake[1]: *** [CMakeFiles/cmTC_7d649.dir/build.make:81: CMakeFiles/cmTC_7d649.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-uxGdtc'
+        gmake: *** [Makefile:134: cmTC_7d649/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:195 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_ansi"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KaPBcO"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KaPBcO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_ansi"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KaPBcO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1c7d4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1c7d4.dir/build.make CMakeFiles/cmTC_1c7d4.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KaPBcO'
+        Building CXX object CMakeFiles/cmTC_1c7d4.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_ansi  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror -std=c++20   -ansi -o CMakeFiles/cmTC_1c7d4.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KaPBcO/src.cxx
+        Linking CXX executable cmTC_1c7d4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c7d4.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -Werror CMakeFiles/cmTC_1c7d4.dir/src.cxx.o -o cmTC_1c7d4
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-KaPBcO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/CMakeLists.txt:324 (check_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_OPENMP"
+    directories:
+      source: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-JjCE7G"
+      binary: "/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-JjCE7G"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: " -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_OPENMP"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-JjCE7G'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6f88e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6f88e.dir/build.make CMakeFiles/cmTC_6f88e.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-JjCE7G'
+        Building CXX object CMakeFiles/cmTC_6f88e.dir/src.cxx.o
+        /usr/bin/c++ -DCOMPILER_SUPPORT_OPENMP  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi  -std=c++20   -fopenmp -o CMakeFiles/cmTC_6f88e.dir/src.cxx.o -c /home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-JjCE7G/src.cxx
+        Linking CXX executable cmTC_6f88e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f88e.dir/link.txt --verbose=1
+        /usr/bin/c++  -std=c++03 -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wenum-conversion -Wc++11-extensions -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -ansi  CMakeFiles/cmTC_6f88e.dir/src.cxx.o -o cmTC_6f88e
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build_backend/CMakeFiles/CMakeScratch/TryCompile-JjCE7G'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLanguage.cmake:140 (message)"
+      - "/home/lex/Documents/trading_app/build_backend/_deps/eigen-src/blas/CMakeLists.txt:5 (check_language)"
+    checks:
+      - "Looking for a Fortran compiler"
+    message: |
+      Looking for a Fortran compiler failed with the following output:
+      -- The Fortran compiler identification is unknown
+      CMake Error at CMakeLists.txt:3 (project):
+        No CMAKE_Fortran_COMPILER could be found.
+      
+        Tell CMake where to find the compiler by setting either the environment
+        variable "FC" or the CMake cache entry CMAKE_Fortran_COMPILER to the full
+        path to the compiler, or to the compiler name if it is in the PATH.
+      
+      
+      -- Configuring incomplete, errors occurred!
+      
+...

@@ -1,0 +1,3 @@
+/home/lex/Documents/trading_app/build_backend/_deps/eigen-subbuild/CMakeFiles/eigen-populate.dir
+/home/lex/Documents/trading_app/build_backend/_deps/eigen-subbuild/CMakeFiles/edit_cache.dir
+/home/lex/Documents/trading_app/build_backend/_deps/eigen-subbuild/CMakeFiles/rebuild_cache.dir

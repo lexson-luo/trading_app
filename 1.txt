@@ -1,0 +1,26 @@
+Step 1 — Install system dependencies (once):
+
+sudo dnf install -y cmake gcc-c++ ninja-build \
+    libX11-devel libXext-devel libXrandr-devel libXi-devel \
+    libXcursor-devel libXinerama-devel libXfixes-devel \
+    wayland-devel libxkbcommon-devel wayland-protocols-devel \
+    mesa-libGL-devel mesa-libEGL-devel glew-devel openssl-devel git
+
+Step 2 — Build everything:
+
+cd ~/Documents/trading_app
+./setup.sh build
+
+Step 3 — Run:
+
+# Terminal 1 — backend
+./setup.sh server
+
+# Terminal 2 — desktop client
+./setup.sh client
+
+
+Default login: admin / admin123
+
+The CMake error you hit (duplicate httplib target) is already fixed. Once glew-devel and the display libraries above are installed, cmake -S . -B build will configure and compile cleanly.
+
