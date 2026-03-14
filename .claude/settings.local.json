@@ -27,7 +27,8 @@
       "Bash(echo \"CMAKE_GENERATOR=$CMAKE_GENERATOR\")",
       "Bash(cmake .. -DCMAKE_BUILD_TYPE=Release)",
       "Bash(cmake .. -G \"Unix Makefiles\" -DCMAKE_BUILD_TYPE=Release)",
-      "Bash(cmake -G \"Unix Makefiles\" -DCMAKE_BUILD_TYPE=Release .)"
+      "Bash(cmake -G \"Unix Makefiles\" -DCMAKE_BUILD_TYPE=Release .)",
+      "Bash(ls -la \"/home/lex/Documents/trading_app/frontend/{ui}\")"
     ]
   }
 }
