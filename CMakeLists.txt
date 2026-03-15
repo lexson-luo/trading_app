@@ -18,9 +18,10 @@ add_compile_options(-Wall -Wextra -fno-omit-frame-pointer)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(FetchDependencies)
 
-find_package(OpenGL REQUIRED)
-find_package(GLEW REQUIRED)
 find_package(Threads REQUIRED)
+
+# Set OFF on headless servers (skips SDL3/GLEW/OpenGL and the GUI client entirely)
+option(BUILD_FRONTEND "Build the desktop GUI client" ON)
 
 # Common header-only library shared by backend and frontend
 add_library(hf_common INTERFACE)
@@ -28,4 +29,9 @@ target_include_directories(hf_common INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/commo
 target_link_libraries(hf_common INTERFACE nlohmann_json::nlohmann_json)
 
 add_subdirectory(backend)
-add_subdirectory(frontend)
+
+if(BUILD_FRONTEND)
+    find_package(OpenGL REQUIRED)
+    find_package(GLEW REQUIRED)
+    add_subdirectory(frontend)
+endif()

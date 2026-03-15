@@ -46,6 +46,11 @@ set(SQLITECPP_BUILD_TESTS  OFF CACHE BOOL "" FORCE)
 set(SQLITECPP_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(SQLiteCpp)
 
+# ── GUI dependencies (only when building the desktop client) ──────────────────
+if(NOT BUILD_FRONTEND)
+    return()   # skip SDL3 / ImGui / ImPlot / GLEW on headless server builds
+endif()
+
 # ── SDL3 (for frontend GUI) ───────────────────────────────────────────────────
 FetchContent_Declare(SDL3
     GIT_REPOSITORY https://github.com/libsdl-org/SDL.git

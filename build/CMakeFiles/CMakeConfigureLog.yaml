@@ -26466,3 +26466,42 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:71 (check_cxx_compiler_flag)"
+      - "build/_deps/eigen-src/CMakeLists.txt:88 (ei_add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test COMPILER_SUPPORT_std=cpp03"
+    directories:
+      source: "/home/lex/Documents/trading_app/build/CMakeFiles/CMakeScratch/TryCompile-lx7cnm"
+      binary: "/home/lex/Documents/trading_app/build/CMakeFiles/CMakeScratch/TryCompile-lx7cnm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-O0 -g3 -fsanitize=address,undefined"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lex/Documents/trading_app/build/_deps/eigen-src/cmake"
+    buildResult:
+      variable: "COMPILER_SUPPORT_std=cpp03"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lex/Documents/trading_app/build/CMakeFiles/CMakeScratch/TryCompile-lx7cnm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_644c3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_644c3.dir/build.make CMakeFiles/cmTC_644c3.dir/build
+        gmake[1]: Entering directory '/home/lex/Documents/trading_app/build/CMakeFiles/CMakeScratch/TryCompile-lx7cnm'
+        Building CXX object CMakeFiles/cmTC_644c3.dir/src.cxx.o
+        /usr/bin/g++ -DCOMPILER_SUPPORT_std=cpp03  -std=c++20   -std=c++03 -o CMakeFiles/cmTC_644c3.dir/src.cxx.o -c /home/lex/Documents/trading_app/build/CMakeFiles/CMakeScratch/TryCompile-lx7cnm/src.cxx
+        Linking CXX executable cmTC_644c3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_644c3.dir/link.txt --verbose=1
+        /usr/bin/g++ CMakeFiles/cmTC_644c3.dir/src.cxx.o -o cmTC_644c3
+        gmake[1]: Leaving directory '/home/lex/Documents/trading_app/build/CMakeFiles/CMakeScratch/TryCompile-lx7cnm'
+        
+      exitCode: 0
+...
