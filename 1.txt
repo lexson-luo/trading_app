@@ -6,15 +6,13 @@ sudo dnf install -y cmake gcc-c++ ninja-build \
     wayland-devel libxkbcommon-devel wayland-protocols-devel \
     mesa-libGL-devel mesa-libEGL-devel glew-devel openssl-devel git
 
-Step 2 — Build everything:
 
-cd ~/Documents/trading_app
-./setup.sh build
-
-Step 3 — Run:
+Step 2 — Run:
 
 # Terminal 1 — backend
-./setup.sh server
+./setup.sh server-deps    # first time only
+./setup.sh server-build   # first time only
+./setup.sh server         # start the backend — leave this running
 
 # Terminal 2 — desktop client
 ./setup.sh client

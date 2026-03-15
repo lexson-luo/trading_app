@@ -8,6 +8,7 @@ struct Config {
     std::string db_path        = "trading_app.db";
     std::string jwt_secret     = "changeme-hedge-fund-secret-2024";
     int         server_port    = 8080;
+    std::string bind_addr      = "0.0.0.0"; // restrict to LAN IP via HF_BIND_ADDR
     std::string broker_mode    = "mock";   // "mock" | "rest"
     std::string broker_url     = "";
     std::string broker_api_key = "";
@@ -31,6 +32,7 @@ struct Config {
             const char* v = std::getenv(name);
             return v ? std::stod(v) : def;
         };
+        cfg.bind_addr       = getenv_str("HF_BIND_ADDR",      cfg.bind_addr);
         cfg.db_path         = getenv_str("HF_DB_PATH",        cfg.db_path);
         cfg.jwt_secret      = getenv_str("HF_JWT_SECRET",     cfg.jwt_secret);
         cfg.server_port     = getenv_int("HF_PORT",           cfg.server_port);

@@ -128,10 +128,12 @@ int main(int argc, char* argv[]) {
             "application/json");
     });
 
-    std::cout << "[SERVER] Hedge Fund Backend listening on 0.0.0.0:" << cfg.server_port << "\n";
-    std::cout << "[SERVER] API base URL: http://localhost:" << cfg.server_port << "/api\n";
+    std::cout << "[SERVER] Hedge Fund Backend listening on "
+              << cfg.bind_addr << ":" << cfg.server_port << "\n";
+    std::cout << "[SERVER] API base URL: http://" << cfg.bind_addr
+              << ":" << cfg.server_port << "/api\n";
 
-    svr.listen("0.0.0.0", cfg.server_port);
+    svr.listen(cfg.bind_addr.c_str(), cfg.server_port);
 
     std::cout << "[SERVER] Shutdown complete\n";
     return 0;
