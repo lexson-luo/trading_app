@@ -31,6 +31,9 @@ int main(int argc, char* argv[]) {
     }
 
     // ── SDL3 init ─────────────────────────────────────────────────────────────
+    // Force X11 backend so GLEW (GLX-based) can initialize correctly.
+    // Wayland sessions use EGL which is incompatible with GLEW.
+    SDL_SetHint(SDL_HINT_VIDEO_DRIVER, "x11");
     if (!SDL_Init(SDL_INIT_VIDEO)) {
         std::cerr << "SDL_Init failed: " << SDL_GetError() << "\n";
         return 1;

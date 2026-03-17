@@ -28,7 +28,11 @@
       "Bash(cmake .. -DCMAKE_BUILD_TYPE=Release)",
       "Bash(cmake .. -G \"Unix Makefiles\" -DCMAKE_BUILD_TYPE=Release)",
       "Bash(cmake -G \"Unix Makefiles\" -DCMAKE_BUILD_TYPE=Release .)",
-      "Bash(ls -la \"/home/lex/Documents/trading_app/frontend/{ui}\")"
+      "Bash(ls -la \"/home/lex/Documents/trading_app/frontend/{ui}\")",
+      "Bash(cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=TRUE -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DBUILD_FRONTEND=ON)",
+      "Read(//usr/lib64/**)",
+      "Bash(rpm -q libasan)",
+      "Bash(ldconfig -p)"
     ]
   }
 }

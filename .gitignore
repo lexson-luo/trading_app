@@ -1,4 +1,34 @@
-build
+# Build directories
+build/
+build_*/
 
+# Environment / secrets
 .env
+*.env.local
 
+# CMake user-specific files
+CMakeUserPresets.json
+.cmake/
+
+# Compiled output
+*.o
+*.a
+*.so
+*.so.*
+*.out
+
+# Editor / IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Runtime artifacts
+*.db
+*.db-shm
+*.db-wal
+*.log
+
+# macOS
+.DS_Store

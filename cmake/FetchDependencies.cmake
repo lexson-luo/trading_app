@@ -68,6 +68,10 @@ FetchContent_MakeAvailable(SDL3)
 # Silence third-party warnings on the SDL3 target so our -Wextra doesn't flood output
 if(TARGET SDL3-static)
     target_compile_options(SDL3-static PRIVATE -w)
+    # Ensure the namespaced alias exists (some SDL3 versions omit it when built via FetchContent)
+    if(NOT TARGET SDL3::SDL3-static)
+        add_library(SDL3::SDL3-static ALIAS SDL3-static)
+    endif()
 endif()
 
 # ── Dear ImGui ────────────────────────────────────────────────────────────────
