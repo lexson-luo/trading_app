@@ -29,6 +29,7 @@ CMakeUserPresets.json
 *.db-shm
 *.db-wal
 *.log
+*.pid
 
 # macOS
 .DS_Store
