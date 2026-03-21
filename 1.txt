@@ -15,6 +15,12 @@ Step 2 — Run:
 ./setup.sh server         # start the backend — leave this running
 
 # Terminal 2 — desktop client
+
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug -DBUILD_FRONTEND=ON && cmake --build build --target hf_client -j$(nproc)
+
+cmake --build build --target hf_client -j$(nproc)
+./build/frontend/hf_client
+
 ./setup.sh client
 
 
