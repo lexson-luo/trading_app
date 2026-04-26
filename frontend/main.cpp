@@ -22,7 +22,7 @@
 #include <string>
 
 int main(int argc, char* argv[]) {
-    std::string host = "localhost";
+    std::string host = "100.80.205.52";
     int port = 8080;
     for (int i = 1; i < argc; ++i) {
         std::string a = argv[i];
