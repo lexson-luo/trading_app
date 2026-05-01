@@ -38,7 +38,7 @@ void DashboardPanel::refresh(AppState& state, client::ApiClient& api) {
         positions_ = pos_r.body["data"].get<std::vector<nlohmann::json>>();
 
     auto pnl_r = api.get("/api/portfolio/pnl");
-    if (pnl_r.ok && pnl_r.body.contains("data"))
+    if (pnl_r.ok && pnl_r.body.contains("data") && !pnl_r.body["data"].is_null())
         pnl_ = pnl_r.body["data"];
 
     auto sess_r = api.get("/api/trading/sessions");
@@ -74,8 +74,8 @@ void DashboardPanel::render(AppState& state, client::ApiClient& api) {
     ImGui::Spacing();
 
     // ── Summary cards ─────────────────────────────────────────────────────────
-    double total_realized = pnl_.value("realized_pnl", 0.0);
-    double total_unrealized = pnl_.value("unrealized_pnl", 0.0);
+    double total_realized = pnl_.is_object() ? pnl_.value("realized_pnl", 0.0) : 0.0;
+    double total_unrealized = pnl_.is_object() ? pnl_.value("unrealized_pnl", 0.0) : 0.0;
     int    pos_count = (int)positions_.size();
     int    active_sessions = 0;
     for (auto& s : sessions_)

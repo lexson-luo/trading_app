@@ -18,7 +18,7 @@ void LoginPanel::do_login(AppState& state, client::ApiClient& api) {
         {"password", password_buf}
     });
 
-    if (resp.ok && resp.body.contains("access_token")) {
+    if (resp.ok && resp.body.contains("access_token") && !resp.body["access_token"].is_null()) {
         std::string token = resp.body["access_token"].get<std::string>();
         api.set_token(token);
         state.access_token  = token;
@@ -30,7 +30,7 @@ void LoginPanel::do_login(AppState& state, client::ApiClient& api) {
         // Clear sensitive buffers
         std::memset(password_buf, 0, sizeof(password_buf));
     } else {
-        if (resp.body.contains("error"))
+        if (resp.body.contains("error") && !resp.body["error"].is_null())
             last_error = resp.body["error"].get<std::string>();
         else if (!resp.error.empty())
             last_error = resp.error;
